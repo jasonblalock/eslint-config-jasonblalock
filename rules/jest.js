@@ -6,7 +6,7 @@ module.exports = {
     'jest/no-identical-title': 'error',
     'jest/valid-expect': 'error',
     'jest/no-jest-import': 'error',
-    'jest/no-large-snapshots': ['warn', {maxSize: 300}],
+    'jest/no-large-snapshots': ['warn', { maxSize: 300 }],
     'jest/no-test-prefixes': 'error',
     'jest/prefer-to-have-length': 'warn',
     'jest/valid-describe': 'error',
@@ -26,4 +26,4 @@ module.exports = {
   env: {
     'jest/globals': true,
   },
-}
+};

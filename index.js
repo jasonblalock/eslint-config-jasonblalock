@@ -1,14 +1,18 @@
 module.exports = {
-  env: {
-    browser: true,
-    node: true,
-  },
   extends: [
-    './stylistic.js',
-    './best-practices.js',
-    './possible-errors.js',
-    './import/index.js',
-    './es6/index.js',
-  ],
-  rules: {},
+    './rules/best-practices',
+    './rules/errors',
+    './rules/node',
+    './rules/style',
+    './rules/variables',
+    './rules/es6',
+    'eslint-config-airbnb-base/rules/imports',
+  ].map(require.resolve),
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  },
+  rules: {
+    strict: 'error',
+  },
 }

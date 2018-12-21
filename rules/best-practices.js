@@ -1,0 +1,23 @@
+module.exports = {
+  extends: [require.resolve('eslint-config-airbnb-base/rules/best-practices')],
+  rules: {
+    'accessor-pairs': 'error',
+    'array-callback-return': 'error',
+    complexity: ['error', 14],
+    'dot-notation': 'error',
+    'max-classes-per-file': 'error',
+    'no-alert': 'error',
+    'no-div-regex': 'error',
+    'no-implicit-globals': 'error',
+    'no-invalid-this': 'error',
+    'no-labels': 'error',
+    'no-restricted-syntax': ['error', 'WithStatement'],
+    'no-return-assign': 'error',
+    'no-self-assign': 'error',
+    'no-unmodified-loop-condition': 'error',
+    'no-useless-call': 'error',
+    radix: 'error',
+    'require-await': 'error',
+    yoda: 'error',
+  },
+};
