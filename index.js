@@ -6,7 +6,7 @@ module.exports = {
     './rules/style',
     './rules/variables',
     './rules/es6',
-    'eslint-config-airbnb-base/rules/imports',
+    './rules/imports',
   ].map(require.resolve),
   parserOptions: {
     ecmaVersion: 2018,
@@ -15,4 +15,4 @@ module.exports = {
   rules: {
     strict: 'error',
   },
-}
+};
