@@ -5,4 +5,4 @@ module.exports = {
     'no-shadow-restricted-names': 'error',
     'no-undefined': 'error',
   },
-}
+};
