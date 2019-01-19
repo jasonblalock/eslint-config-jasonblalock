@@ -58,4 +58,4 @@ requests! Thanks!
 
 [egghead]: https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github
 [all-contributors]: https://github.com/kentcdodds/all-contributors
-[issues]: https://github.com/kentcdodds/eslint-config-kentcdodds/issues
+[issues]: https://github.com/jasonblalock/eslint-config-kentcdodds/issues
