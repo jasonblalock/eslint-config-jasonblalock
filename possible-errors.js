@@ -5,12 +5,14 @@ module.exports = {
   },
   rules: {
     'for-direction': 'error',
-    'getter-return': ['error', {allowImplicit: true}],
-    'no-cond-assign': 'error',
+    'getter-return': ['error', { allowImplicit: true }],
+    'no-async-promise-executor': 'error',
+    'no-await-in-loop': 'error',
+    'no-compare-neg-zero': 'error',
+    'no-cond-assign': ['error', 'always'],
     'no-console': 'error',
     'no-constant-condition': 'error',
     'no-control-regex': 'error',
-    'no-compare-neg-zero': 'error',
     'no-debugger': 'error',
     'no-dupe-args': 'error',
     'no-dupe-keys': 'error',
@@ -18,14 +20,23 @@ module.exports = {
     'no-empty-character-class': 'error',
     'no-empty': 'error',
     'no-ex-assign': 'error',
-    'no-extra-boolean-cast': 'off',
+    'no-extra-boolean-cast': 'error',
+    'no-extra-parens': ['off', 'all', {
+      conditionalAssign: true,
+      nestedBinaryExpressions: false,
+      returnAssign: false,
+      ignoreJSX: 'all', // delegate to eslint-plugin-react
+      enforceForArrowConditionals: false,
+    }],
+    'no-extra-semi': 'error',
     'no-func-assign': 'error',
     'no-inner-declarations': 'error',
     'no-invalid-regexp': 'error',
     'no-irregular-whitespace': 'error',
-    'no-negated-in-lhs': 'error',
+    'no-misleading-character-class': 'error',
+    'no-negated-in-lhs': 'off', // deprecated in 3.3 - replace with no-unsafe-negation
     'no-obj-calls': 'error',
-    'no-prototype-builtins': 'off',
+    'no-prototype-builtins': 'error',
     'no-regex-spaces': 'error',
     'no-sparse-arrays': 'error',
     'no-template-curly-in-string': 'error',
@@ -33,11 +44,9 @@ module.exports = {
     'no-unreachable': 'error',
     'no-unsafe-finally': 'error',
     'no-unsafe-negation': 'error',
+    'require-atomic-updates': 'error',
     'use-isnan': 'error',
-    'valid-jsdoc': ['error', {requireReturn: false}],
+    'valid-jsdoc': 'off', // deprecated
     'valid-typeof': 'error',
-
-    // variables
-    'no-use-before-define': ['error', 'nofunc'],
   },
-}
+};

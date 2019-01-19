@@ -1,16 +1,20 @@
 module.exports = {
   extends: './non-rules-config.js',
   rules: {
-    'import/extensions': 'error',
+    'import/exports-last': 'error',
+    'import/extensions': ['error', 'ignorePackages', {
+      js: 'never',
+      mjs: 'never',
+      jsx: 'never',
+    }],
     'import/newline-after-import': 'error',
-    'import/no-named-as-default': 'error',
     'import/no-amd': 'error',
     'import/no-commonjs': 'off',
     'import/no-named-default': 'error',
     'import/no-namespace': 'off',
     'import/no-nodejs-modules': 'off',
     'import/order': [
-      1,
+      'error',
       {
         groups: [
           'builtin',
@@ -20,5 +24,6 @@ module.exports = {
         ],
       },
     ],
+    'import/prefer-default-export': 'error',
   },
-}
+};
