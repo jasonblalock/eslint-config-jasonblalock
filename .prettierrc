@@ -6,7 +6,7 @@
   "singleQuote": true,
   "trailingComma": "all",
   "bracketSpacing": true,
-  "jsxBracketSameLine": false
+  "jsxBracketSameLine": false,
   "jsxSingleQuote": false,
   "arrowParens": "avoid",
 }
